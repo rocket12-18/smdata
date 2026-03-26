@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuruJibangali</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .image-wrapper {
+            width: 100%;
+            position: relative;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .clickable {
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .clickable:hover {
+            opacity: 0.9;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .whatsapp-float svg {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-wrapper clickable" onclick="openWhatsApp()">
+            <img src="https://raw.githubusercontent.com/rocket12-18/smdata/refs/heads/main/01.png" alt="Image 1">
+        </div>
+        <div class="image-wrapper">
+            <img src="https://raw.githubusercontent.com/rocket12-18/smdata/refs/heads/main/02.png" alt="Image 2">
+        </div>
+        <div class="image-wrapper clickable" onclick="openWhatsApp()">
+            <img src="https://raw.githubusercontent.com/rocket12-18/smdata/refs/heads/main/03.png" alt="Image 3">
+        </div>
+        <div class="image-wrapper">
+            <img src="https://raw.githubusercontent.com/rocket12-18/smdata/refs/heads/main/04.jpg.jpeg" alt="Image 4">
+        </div>
+        <div class="image-wrapper">
+            <img src="https://raw.githubusercontent.com/rocket12-18/smdata/refs/heads/main/05.jpg.jpeg" alt="Image 5">
+        </div>
+        <div class="image-wrapper">
+            <img src="https://raw.githubusercontent.com/rocket12-18/smdata/refs/heads/main/06.jpg.jpeg" alt="Image 6">
+        </div>
+        <div class="image-wrapper">
+            <img src="https://raw.githubusercontent.com/rocket12-18/smdata/refs/heads/main/07.jpg.jpeg" alt="Image 7">
+        </div>
+        <div class="image-wrapper clickable" onclick="openWhatsApp()">
+            <img src="https://raw.githubusercontent.com/rocket12-18/smdata/refs/heads/main/08.png" alt="Image 8">
+        </div>
+        <div class="image-wrapper clickable" onclick="openWhatsApp()">
+            <img src="https://raw.githubusercontent.com/rocket12-18/smdata/refs/heads/main/9%20last.png" alt="Image 9">
+        </div>
+    </div>
+
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 8.135-2.135c2.369 1.313 5.061 2.135 7.865 2.135 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.547 0-5.053-0.747-7.2-2.133l-0.512-0.32-5.312 1.387 1.413-5.28-0.347-0.533c-1.52-2.347-2.373-5.067-2.373-7.787 0-7.36 5.973-13.333 13.333-13.333s13.333 5.973 13.333 13.333-5.973 13.333-13.333 13.333zM22.667 18.667c-0.4-0.2-2.347-1.16-2.707-1.293s-0.627-0.2-0.893 0.2c-0.267 0.4-1.027 1.293-1.253 1.56s-0.467 0.293-0.867 0.093c-0.4-0.2-1.693-0.627-3.227-2-1.187-1.067-2-2.387-2.227-2.787s-0.027-0.613 0.173-0.813c0.173-0.173 0.4-0.467 0.6-0.693s0.267-0.4 0.4-0.667c0.133-0.267 0.067-0.493-0.033-0.693s-0.893-2.147-1.227-2.933c-0.32-0.773-0.653-0.667-0.893-0.68-0.227-0.013-0.493-0.013-0.76-0.013s-0.693 0.093-1.053 0.493c-0.36 0.4-1.387 1.36-1.387 3.307s1.413 3.84 1.613 4.107c0.2 0.267 2.827 4.32 6.853 6.053 0.96 0.413 1.707 0.667 2.293 0.853 0.96 0.307 1.84 0.267 2.533 0.16 0.773-0.12 2.347-0.96 2.68-1.893s0.333-1.733 0.227-1.893c-0.107-0.16-0.373-0.267-0.773-0.467z"/>
+        </svg>
+    </div>
+
+    <script>
+        function openWhatsApp() {
+            const phoneNumber = '919915702042';
+            const whatsappURL = `https://wa.me/${phoneNumber}`;
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>
